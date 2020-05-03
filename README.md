@@ -39,15 +39,18 @@ https://slack.com/apps/A0F7XDUAZ
     ```bash
     ./slack_post.sh -t 'Hello from terminal!'
     ```
+    ![example1](img/example1.png)
 2. Send a message received in a pipe.
     ```bash
     echo 'Message via pipe' | ./slack_post.sh
     ```
+    ![example2](img/example2.png)
 3. Customize message
     ```bash
     # Send different channel
-    ./slack_post.sh --channel #random --username 'The Living Dead' --icon_emoji ':male-zombie:'
+    ./slack_post.sh --channel #random --username 'Your boss' --icon_emoji ':sunglasses:'
     ```
+    ![example3](img/example3.png)
 
 If you want to post full-customized message, generate json text and post it with following command.
 ```bash
