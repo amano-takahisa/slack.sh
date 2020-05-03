@@ -43,6 +43,8 @@ https://slack.com/apps/A0F7XDUAZ
 2. Send a message received in a pipe.
     ```bash
     echo 'Message via pipe' | ./slack_post.sh
+    # if you want to keep your stdout form script,
+    echo 'Message via pipe' | tee >(./slack_post.sh)
     ```
     ![example2](img/example2.png)
 3. Customize message
