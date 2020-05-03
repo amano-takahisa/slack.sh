@@ -17,16 +17,16 @@ usage() {
     echo
     echo "Options:"
     echo "  -h, --help"
+    echo "      --dry-run"
+    echo "          Print JSON text to preview your post."
     echo "      --version"
     echo "  -c, --channel ARG"
     echo "          '#channel' post to the channel. '@user' to post to a user."
-    echo "          "
     echo "          By default, post to default channel set on webhook."
     echo "  -u, --username ARG"
-    echo "          slack bot name"
+    echo "          Slack bot name."
     echo "  -t, --text ARG"
     echo "  -e, --icon_emoji ARG"
-    echo
     exit 1
 }
 
@@ -36,8 +36,6 @@ username="webhookbot:$(whoami)@$(hostname)"
 text="Message from Slack Webhook"
 icon_emoji=":robot_face:"
 dry=0
-
-##### Here is main block to generate parametors ############
 
 # get message text from standard input
 if [ -p /dev/stdin ]; then

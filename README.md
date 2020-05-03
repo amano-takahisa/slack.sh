@@ -48,7 +48,7 @@ https://slack.com/apps/A0F7XDUAZ
 3. Customize message
     ```bash
     # Send different channel
-    ./slack_post.sh --channel #random --username 'Your boss' --icon_emoji ':sunglasses:'
+    ./slack_post.sh --channel '#random' --username 'Your boss' --icon_emoji ':sunglasses:'
     ```
     ![example3](img/example3.png)
 
