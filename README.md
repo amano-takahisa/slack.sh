@@ -20,7 +20,7 @@ Webhook URL looks something like this: `https://hooks.slack.com/services/T000000
 and export the URL to `$SLACK_WHURL` with the command below.
 
 ```bash
-export $SLACK_WHURL=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
+export SLACK_WHURL=https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
 Copy `slack_post.sh` to your local directory and give the file execute permission.
